@@ -1,0 +1,35 @@
+.add-task {
+    background-color: #101263;
+    text-transform: capitalize;
+    padding: 50px 0;
+    
+    .add-task-details {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+        color: #fff;
+        margin-bottom: 20px;
+        text-align: center;
+        }
+        input[type="text"]{
+            width: 100%;
+            padding: 10px 20px;
+        }
+        input[type="text"]:focus{
+            outline: none;
+        }
+        button{
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #101263;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+            text-transform: capitalize;
+            align-self: flex-end;
+            border-radius: 5px
+        }
+    }
+    
+}

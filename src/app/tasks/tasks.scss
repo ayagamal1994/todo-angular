@@ -1,0 +1,39 @@
+.tasks {
+    margin-top: 30px;
+    .tasks-item {
+        padding: 10px;
+        border: 1px solid #101263;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        h3 {
+            color: #101263;
+            text-transform: capitalize;
+        }
+        h3.completed {
+            text-decoration: line-through;
+        }
+        .task-details {
+            display: flex;
+            gap: 5px;
+            button {
+                padding: 5px;
+                text-transform: capitalize;
+                color: #101263;
+                font-size: 12px;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            .complete {
+                background-color: #b9e6ca;
+                border: 1px solid #52a975;
+            }
+            .delete {
+                background-color: #f1bbbb;
+                border: 1px solid #e17272
+            }
+        }
+    }
+}

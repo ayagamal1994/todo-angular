@@ -1,0 +1,2 @@
+<app-add-task (dataEvent)="receiveData($event)"/>
+<app-tasks [items] = "alltasks" (deleteEvent)="deleteItem($event)" (completeEvent)="completeItem($event)"/>

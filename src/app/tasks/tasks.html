@@ -1,0 +1,15 @@
+<section class="tasks">
+    <div class="container">
+        
+            @for(item of items; track item.id; let i=$index){
+                <div class="tasks-item">
+                    <h3 [ngClass]="{'completed': item.completed}">{{item.title}}</h3>
+                    <div class="task-details">
+                        <button class="complete" (click)="onComplete(i)">complete</button>
+                        <button class="delete" (click)="onDelete(i)" >delete</button>
+                    </div>
+                </div>
+                
+            }
+    </div>
+</section>
